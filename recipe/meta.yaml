@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/DraconPern/{{ name | lower }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: c5b203ec580cab6fbd92c24712e987e960bda45638d4c2061d0b15d5d520ab42
-  patches:
-    - 0001-cmake-win.patch  # [win]
 
 build:
   number: 3
@@ -27,7 +25,6 @@ requirements:
   host:
     - dcmtk
     - openjpeg
-    - m2-patch  # [win]
 
 test:
   commands:
